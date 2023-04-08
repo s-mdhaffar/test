@@ -1,0 +1,147 @@
+.container{
+    height: 600px;
+    width: 100%;
+    background: blueviolet;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    /* flex-direction: column-reverse; */
+    /* align-items: center;
+    flex-wrap: wrap; */
+}
+
+.dim{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background: red;
+
+}
+
+@media screen and (max-width:400px) {
+    .dim{
+        display: none;
+    }
+}
+
+.child1{
+/* flex: 2;
+order: 2; */
+background: blue;
+}
+
+.child2{
+/* flex: 4; */
+    background: lime;
+    /* order: 1; */
+}
+
+.child3{
+/* flex: 1; */
+    background: blueviolet;
+    /* order: 3; */
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 100px 400px 300px;
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;
+    
+  }
+
+.colors{
+    background: red;
+    border: 1px solid black;
+}
+
+#first{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    justify-self: center;
+    align-self: center;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header right right'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.box,.box0, .box1, .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    margin: 100px;
+}
+
+.box0{
+    height: 400px;
+    width: 400px;
+    background: limegreen;
+}
+
+.box1{
+    height: 300px;
+    width: 300px;
+    background: red;
+    /* position: relative; */
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    /* position: relative; */
+}
+
+.box3{
+    height: 100px;
+    width: 100px;
+    background: blue;
+    position: relative;
+    top:50px;
+    left:50px
+}
+.sticky{
+    background: grey;
+    padding: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    background: #2196F3;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
